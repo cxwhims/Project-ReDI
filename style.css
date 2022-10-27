@@ -2,29 +2,92 @@
     box-sizing: border-box;
 }
 body {
-    background: rgb(243, 216, 216);
     margin: 0;
-    display: flex;
-    justify-content: center;
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
-    background: rgb(232, 137, 137);
     max-width: 1200px;
+    margin: auto;
 }
 
 .header {
     display: flex;
     flex-wrap: wrap;
-    height: 70px;
+    margin-top: 5px;
+}
+
+header .header-logo p {
+    padding-left: 5px;
 }
 
 .header-logo {
     display: flex;
+    position: relative;
     align-items: center;
     width: 50%;
+    height: 50px;
     padding-left: 20px;
+}
+
+.your {
+    transform: rotate(-45deg);
+    z-index: 5;
+    font-size: small;
+    color: white;
+}
+
+.food {
+    font-family: 'Shalimar', cursive;
+    font-size: 40px;
+}
+
+.header-logo-color {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px;
+  
+    position: absolute;
+    left: 2%; top: 15%;
+  
+    background-color: red;
+  
+    transform: rotate(-45deg);
+  }
+  
+  .header-logo-color:before,
+  .header-logo-color:after {
+    content: "";
+  
+    position: absolute;
+    height: 25px;
+    width: 25px;
+  
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .header-logo-color:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .header-logo-color:after {
+    left: 15px;
+    top: 0;
+  }
+
+
+h1 {
+    font-family: 'Shalimar', cursive;
+    /* font-size: medium; */
+    margin: auto;
+    text-align: center;
 }
 
 p {
@@ -34,12 +97,28 @@ p {
 
 .header-baner {
     width: 50%;
+    margin: 0 auto;
+    animation: mymove 2s infinite;
+    color: white;
+    border-radius: 5px;
+}
+
+.header-baner p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: rgb(69, 170, 11);}
 }
 
 .navigation {
-    background-color: blue;
+    background-color: #A3D0C3;
     margin: 0px;
+    margin-top: 5px;
     width: 100%;
+    border-radius: 5px;
 }
 
 .navigation ul {
@@ -47,15 +126,57 @@ p {
     margin: auto;
     padding: 0px;
     justify-content: center;
-    height: 100%;
-
+    /* height: 100%; */
 }
 
 li {
     list-style-type: none;
     justify-content: center;
     margin: auto;
+    font-family: 'Shalimar', cursive;
+    font-size: 34px;
 }
+
+.navigation-link:hover {
+    text-shadow:
+      -1px -1px 1px silver,
+      1px -1px 1px silver;
+    color: white;
+  } 
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 2px auto;
+  }
+  .search {background: #A3D0C3;}
+  .search input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+  }
+  .search button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+  }
 
 .main-wrapper {
     display: flex;
@@ -66,16 +187,21 @@ li {
     display: flex;
     position: relative;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 p {
-    text-align: center;
+    text-align: justify;
+    padding: 10px;
 }
 
 img {
     max-width: 100%;
     width: 50%;
     height: 100%;
+    border-radius: 5px;
 }
 
 .Sp {
@@ -84,26 +210,29 @@ img {
     bottom: 0px;
     left: 0px;
     color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font: 2em sans-serif;
+    font-family: 'Shalimar', cursive;
+    font-size: 3em;
+    text-align: center;
     width: 50%;
-    padding-left: 20px;
-    padding-bottom: 10px;
 }
 
 .section-other {
     display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
 .other {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .dish {
-    width: 95%;
+    width: 100%;
 }
 
 .footer {
