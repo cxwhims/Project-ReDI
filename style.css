@@ -13,9 +13,10 @@ a {
 .wrapper {
     max-width: 1200px;
     margin: auto;
+    padding: 0px 5px 0px 5px;
 }
 
-.header {
+.header, .footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -113,7 +114,7 @@ p {
     to {background-color: rgb(69, 170, 11);}
 }
 
-.navigation {
+.header .navigation {
     background-color: #A3D0C3;
     margin: 0px;
     margin-top: 5px;
@@ -146,7 +147,7 @@ li {
 
 form {
     position: relative;
-    width: 300px;
+    width: 250px;
     margin: 2px auto;
   }
   .search {background: #A3D0C3;}
@@ -200,7 +201,6 @@ p {
 img {
     max-width: 100%;
     width: 50%;
-    height: 100%;
     border-radius: 5px;
 }
 
@@ -218,9 +218,8 @@ img {
 
 .section-other {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap: 10px;
+    margin-top: 5px;
+    gap: 5px;
 }
 
 .other {
@@ -236,5 +235,41 @@ img {
 }
 
 .footer {
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    background-color: #A3D0C3;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .header-baner {
+        display: none;
+    }
+
+    .header-logo {
+        width: 100%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .section-special {
+        flex-direction: column;
+    }
+
+    .section-special img {
+        width: 100%;
+    }
+
+    .Sp {
+        bottom: auto;
+        top: auto;
+        width: 100%;
+    }
+
+    .section-other {
+        flex-direction: column;
+    }
 }
