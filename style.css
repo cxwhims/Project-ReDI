@@ -138,6 +138,10 @@ li {
     font-size: 34px;
 }
 
+.navigation-link {
+    color: black;
+}
+
 .navigation-link:hover {
     text-shadow:
       -1px -1px 1px silver,
