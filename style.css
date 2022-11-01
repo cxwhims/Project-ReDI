@@ -305,4 +305,7 @@ img {
     .navigation-recipes-link {
         max-height: 280px;
     }
+
+    .construction-wrapper {
+        height: calc(100vh - 380px);
 }
