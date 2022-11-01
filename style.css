@@ -257,9 +257,18 @@ img {
 
 .recipes-link {
     font-size: 1.7em;
-
-    
 }
+
+.construction-wrapper {
+    height: calc(100vh - 220px);
+}
+
+.construction-wrapper img {
+    width: 25%;
+    margin: auto;
+}
+
+
 
 @media screen and (max-width: 650px) {
 
@@ -294,6 +303,6 @@ img {
     }
 
     .navigation-recipes-link {
-        max-height: 270px;
+        max-height: 280px;
     }
 }
