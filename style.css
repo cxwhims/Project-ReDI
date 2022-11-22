@@ -85,8 +85,7 @@ header .header-logo p {
 
 
 h1 {
-    font-family: 'Shalimar', cursive;
-    margin: auto;
+    font-family: 'Shalimar', cursive; 
     text-align: center;
 }
 
@@ -168,7 +167,7 @@ form {
   }
 
   .search button {
-    position: absolute; 
+    position: absolute;
     top: 2px;
     right: 0px;
     width: 42px;
